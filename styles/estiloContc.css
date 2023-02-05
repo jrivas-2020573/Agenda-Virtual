@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    height: 100vh;
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    height: 75px;
+    background: black;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.logo{
+    margin: 25px;
+    float: left;
+    line-height: 45px;
+}
+.logo h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: default;
+}
+.menu{
+    float: right;
+    line-height: 75px;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: normal;
+    font-size: 14px;
+    transition: all 500ms ease;
+}
+.menu a:hover{
+    color: #40de40;
+    border-bottom: 4px solid #40de32;
+}
+#btn-menu{
+    display: none;
+}
+.boton{
+    float: right;
+    display: none;
+}
+.boton label{
+    color: #fff;
+    background: #2a343e;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.center{
+    margin-top: 400px;
+    background: #40de32;
+}
+.table{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+}
+input[type="button"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    border-color: #2691d9;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+input[type="button"]:hover {
+    border-color: #2691d9;
+    transition: .5s;
+}
+.center {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: none;
+    border-radius: 10px;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:768px){
+    .header{
+        height: 60px;
+    }
+    .logo{
+        line-height: 60px;
+    }
+    .boton{
+        margin-top: 10px;
+        line-height: 25px;
+    }
+    .logo h1{
+        font-size: 18px;
+    }
+    .menu{
+        position: absolute;
+        background: #234;
+        width: 40%;
+        height: 100vh;
+        top: 60px;
+        left: 0;
+        transition: all 500ms ease;
+        transform: translateX(-100%);
+    }
+    #btn-menu:checked ~ .menu{
+        transform: translateX(0%);
+    }
+    .menu a{
+        display: block;
+        margin-top: 10px;
+    }
+    .boton{
+        display: block;
+    }
+    .center {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        background: none;
+        border-radius: 10px;
+    }
+    .table{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        background: white;
+        border-radius: 10px;
+    }
+}
